@@ -24,9 +24,7 @@
 
 Here's an example how the data looks (*each class takes three-rows*):
 
-![](doc/img/fashion-mnist-sprite.png)
-
-<img src="doc/img/embedding.gif" width="100%">
+![](Images/fashion-mnist-sprite.png)
 
 ## Get the Data
 
