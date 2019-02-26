@@ -112,7 +112,7 @@ result = CNNmodel.fit(x_train,
 # Evaluate the model on test set
 score = CNNmodel.evaluate(x_test, y_test, verbose=0)
 
-# Print test accuracy
+# Print test accuracy.
 print('\n', 'Test accuracy:', score[1])
 
 y_hat = CNNmodel.predict(x_test)
