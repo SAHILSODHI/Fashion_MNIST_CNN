@@ -4,7 +4,10 @@
 
 @author: sahilsodhi
 """
-
+import warnings
+warnings.filterwarnings("ignore", message="numpy.dtype size changed")
+warnings.filterwarnings(action="ignore", category = FutureWarning)
+warnings.filterwarnings(action="ignore", category = RuntimeWarning)
 import tensorflow as tf
 import matplotlib.pyplot as plt
 from keras.models import Sequential
@@ -14,7 +17,6 @@ from keras.layers import Flatten
 from keras.layers import Dense
 from keras.layers import Dropout
 from keras.utils import to_categorical
-
 # Load the fashion-mnist train data and test data
 (x_train, y_train), (x_test, y_test) = tf.keras.datasets.fashion_mnist.load_data()
 print("x_train shape:", x_train.shape, "y_train shape:", y_train.shape)
